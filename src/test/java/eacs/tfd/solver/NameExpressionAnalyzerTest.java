@@ -1,25 +1,19 @@
+package eacs.tfd.solver;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import org.junit.Test;
-
-import eacs.tfd.solver.Constant;
-import eacs.tfd.solver.NameExpressionAnalyzer;
-import eacs.tfd.solver.Term;
-import eacs.tfd.solver.Variable;
 
 public class NameExpressionAnalyzerTest {
 
 	@Test
 	public void get_constant_receive_void() {
 		List <Term> terms = new ArrayList<Term>();
-		Set <String> result = new HashSet<String>();
 		
 		terms.add(new Constant(1f));
 		terms.add(new Constant(2f));

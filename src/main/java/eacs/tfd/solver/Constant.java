@@ -21,10 +21,10 @@ public class Constant extends Term {
 	public boolean hasName(Set<String> names) {
 		return false;
 	}
+	
 	@Override
 	public void dispatch(TermVisitor visitor) {
 		visitor.visit(this);
 	}
-
 
 }

@@ -1,3 +1,4 @@
+package eacs.tfd.solver;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
